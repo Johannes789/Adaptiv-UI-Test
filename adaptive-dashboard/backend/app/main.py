@@ -3,6 +3,7 @@ import io
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
+from typing import Optional
 
 from .models import Event, LayoutResponse
 from .storage import append_event, read_events, read_all_events
@@ -44,7 +45,7 @@ def get_layout(user_id: str, condition: str):
     )
 
 @app.get("/export_csv")
-def export_csv(user_id: str | None = Query(default=None)):
+def export_csv(user_id: Optional[str] = Query(default=None)):
     if user_id:
         events = read_events(user_id)
         filename = f"events_{user_id}.csv"
@@ -93,7 +94,7 @@ def export_csv(user_id: str | None = Query(default=None)):
     )
     
 @app.get("/export_summary_csv")
-def export_summary_csv(user_id: str | None = Query(default=None)):
+def export_summary_csv(user_id: Optional[str] = Query(default=None)):
     if user_id:
         events = read_events(user_id)
         filename = f"summary_{user_id}.csv"
@@ -122,6 +123,9 @@ def export_summary_csv(user_id: str | None = Query(default=None)):
                 "successful_test_tasks": 0,
                 "failed_test_tasks": 0,
                 "success_rate": 0,
+                "session_count": 0,
+                "total_session_duration_ms": 0,
+                "avg_session_duration_ms": 0,
                 "refresh_count": 0,
                 "switch_count": 0,
             }
@@ -140,14 +144,17 @@ def export_summary_csv(user_id: str | None = Query(default=None)):
             row["total_duration_ms"] += int(e.meta.get("duration_ms", 0) or 0)
         elif e.event_type == "test_task_complete":
             row["completed_test_tasks"] += 1
+            if e.meta.get("success") is True:
+                row["successful_test_tasks"] += 1
+            else:
+                row["failed_test_tasks"] += 1
+        elif e.event_type == "test_session_end":
+            row["session_count"] += 1
+            row["total_session_duration_ms"] += int(e.meta.get("duration_ms", 0) or 0)
         elif e.event_type == "refresh_layout":
             row["refresh_count"] += 1
         elif e.event_type == "switch_condition":
             row["switch_count"] += 1
-        if e.meta.get("success") is True:
-            row["successful_test_tasks"] += 1
-        else:
-            row["failed_test_tasks"] += 1
 
     # Durchschnittliche Verweildauer berechnen
     for row in grouped.values():
@@ -166,6 +173,12 @@ def export_summary_csv(user_id: str | None = Query(default=None)):
             )
         else:
             row["success_rate"] = 0
+        if row["session_count"] > 0:
+        row["avg_session_duration_ms"] = round(
+            row["total_session_duration_ms"] / row["session_count"], 2
+        )
+        else:
+            row["avg_session_duration_ms"] = 0
 
     output = io.StringIO()
     writer = csv.writer(output)
@@ -185,6 +198,9 @@ def export_summary_csv(user_id: str | None = Query(default=None)):
         "successful_test_tasks",
         "failed_test_tasks",
         "success_rate",
+        "session_count",
+        "total_session_duration_ms",
+        "avg_session_duration_ms",
         "refresh_count",
         "switch_count",
     ])
@@ -207,6 +223,9 @@ def export_summary_csv(user_id: str | None = Query(default=None)):
             row["success_rate"],
             row["refresh_count"],
             row["switch_count"],
+            row["session_count"],
+            row["total_session_duration_ms"],
+            row["avg_session_duration_ms"],
         ])
 
     output.seek(0)
