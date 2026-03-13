@@ -174,7 +174,7 @@ def export_summary_csv(user_id: Optional[str] = Query(default=None)):
         else:
             row["success_rate"] = 0
         if row["session_count"] > 0:
-        row["avg_session_duration_ms"] = round(
+            row["avg_session_duration_ms"] = round(
             row["total_session_duration_ms"] / row["session_count"], 2
         )
         else:

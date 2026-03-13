@@ -357,6 +357,15 @@ export default function Dashboard() {
       },
     }).catch(() => {});
 
+    if (condition === "adaptive") {
+        try {
+          const l = await getLayout(userId, "adaptive");
+          setLayout(l);
+        } catch (e) {
+          setError(String(e.message || e));
+        }
+      }
+
     setStatusMessage(
       success
         ? `Testaufgabe ${currentTestTask.id} erfolgreich abgeschlossen.`
@@ -400,9 +409,10 @@ export default function Dashboard() {
     }));
   }
 
-  async function startTestSession() {
+  async function startTestSessionWithCondition(sessionCondition) {
     const startTs = Date.now();
   
+    setCondition(sessionCondition);
     setIsSessionRunning(true);
     setSessionCompleted(false);
     setSessionStartTime(startTs);
@@ -418,18 +428,25 @@ export default function Dashboard() {
     setShowDetails(false);
     setIsEditing(false);
   
+    try {
+      const l = await getLayout(userId, sessionCondition);
+      setLayout(l);
+    } catch (e) {
+      setError(String(e.message || e));
+    }
+  
     await logEvent({
       user_id: userId,
-      condition,
+      condition: sessionCondition,
       event_type: "test_session_start",
-      target: `session:${condition}`,
+      target: `session:${sessionCondition}`,
       ts: nowIso(),
       meta: {
-        session_condition: condition,
+        session_condition: sessionCondition,
       },
     }).catch(() => {});
   
-    setStatusMessage(`Testsession in der Bedingung "${condition}" wurde gestartet.`);
+    setStatusMessage(`Testsession in der Bedingung "${sessionCondition}" wurde gestartet.`);
   }
 
   async function endTestSession() {
@@ -707,12 +724,20 @@ export default function Dashboard() {
   </div>
 
   <div style={{ display: "flex", gap: 10, marginTop: 14, flexWrap: "wrap" }}>
+  <button
+        onClick={() => startTestSessionWithCondition("static")}
+        disabled={isSessionRunning}
+        style={isSessionRunning ? disabledButtonStyle : primaryButtonStyle}
+        >
+        Testsession starten – Statisch
+    </button>
+
     <button
-      onClick={startTestSession}
-      disabled={isSessionRunning}
-      style={isSessionRunning ? disabledButtonStyle : primaryButtonStyle}
-    >
-      Testsession starten
+        onClick={() => startTestSessionWithCondition("adaptive")}
+        disabled={isSessionRunning}
+        style={isSessionRunning ? disabledButtonStyle : primaryButtonStyle}
+        >
+        Testsession starten – Adaptiv
     </button>
 
     <button
