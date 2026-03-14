@@ -68,6 +68,9 @@ export default function Dashboard() {
     const [isSessionRunning, setIsSessionRunning] = useState(false);
     const [sessionStartTime, setSessionStartTime] = useState(null);
     const [sessionCompleted, setSessionCompleted] = useState(false);
+    const [lastAppliedAdaptiveUpdate, setLastAppliedAdaptiveUpdate] = useState(false);
+    const [previousOrderedTaskIds, setPreviousOrderedTaskIds] = useState([]);
+    const [recentlyMovedTaskIds, setRecentlyMovedTaskIds] = useState([]);
     const [error, setError] = useState("");
 
   useEffect(() => {
@@ -77,7 +80,10 @@ export default function Dashboard() {
       setError("");
       try {
         const l = await getLayout(userId, condition);
-        if (!cancelled) setLayout(l);
+        if (!cancelled) {
+          setPreviousOrderedTaskIds(layout?.ordered_task_ids || []);
+          setLayout(l);
+        }
       } catch (e) {
         if (!cancelled) {
           setError(String(e.message || e));
@@ -101,7 +107,7 @@ export default function Dashboard() {
       ts: nowIso(),
       meta: {},
     }).catch(() => {});
-  }, [userId, condition]);
+  }, [userId, condition, layout?.ordered_task_ids]);
 
   const orderedTasks = useMemo(() => {
     if (!layout?.ordered_task_ids) return TASKS;
@@ -358,13 +364,40 @@ export default function Dashboard() {
     }).catch(() => {});
 
     if (condition === "adaptive") {
-        try {
-          const l = await getLayout(userId, "adaptive");
-          setLayout(l);
-        } catch (e) {
-          setError(String(e.message || e));
+      try {
+        const oldOrder = layout?.ordered_task_ids || [];
+        const l = await getLayout(userId, "adaptive");
+        const newOrder = l.ordered_task_ids || [];
+    
+        setPreviousOrderedTaskIds(oldOrder);
+        setLayout(l);
+    
+        const hasChanged =
+          JSON.stringify(oldOrder) !== JSON.stringify(newOrder);
+    
+        setLastAppliedAdaptiveUpdate(hasChanged);
+    
+        if (hasChanged) {
+          const movedUpTasks = newOrder.filter((taskId) => {
+            const oldIndex = oldOrder.indexOf(taskId);
+            const newIndex = newOrder.indexOf(taskId);
+            return oldIndex !== -1 && newIndex !== -1 && newIndex < oldIndex;
+          });
+    
+          setRecentlyMovedTaskIds(movedUpTasks);
+    
+          setStatusMessage(
+            "Die adaptive Oberfläche wurde basierend auf dem bisherigen Nutzungsverhalten aktualisiert."
+          );
+    
+          setTimeout(() => {
+            setRecentlyMovedTaskIds([]);
+          }, 1800);
         }
+      } catch (e) {
+        setError(String(e.message || e));
       }
+    }
 
     setStatusMessage(
       success
@@ -636,7 +669,7 @@ export default function Dashboard() {
                 </select>
               </label>
 
-              <button
+              {/* <button
                 onClick={refreshLayout}
                 style={
                   condition === "adaptive"
@@ -646,7 +679,7 @@ export default function Dashboard() {
                 disabled={condition !== "adaptive"}
               >
                 Adaptive Anordnung anwenden
-              </button>
+              </button> */}
 
               <div style={{ fontSize: 13, opacity: 0.8 }}>
                 Aktuelle Test-ID:&nbsp;
@@ -889,6 +922,29 @@ export default function Dashboard() {
         </div>
       ) : null}
 
+      {condition === "adaptive" ? (
+        <div
+          style={{
+            border: "1px solid #d8e6ff",
+            background: "#f4f8ff",
+            borderRadius: 12,
+            padding: 12,
+            marginBottom: 16,
+            color: "#16355f",
+          }}
+        >
+          <strong>Adaptive Oberfläche aktiv:</strong>{" "}
+          Aufgaben und Aktionen können auf Basis des bisherigen Nutzungsverhaltens
+          priorisiert und hervorgehoben werden.
+
+          {lastAppliedAdaptiveUpdate ? (
+            <div style={{ marginTop: 8, fontSize: 13 }}>
+              Die Anordnung wurde zuletzt automatisch aktualisiert.
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+
       {error ? (
         <div
           style={{
@@ -941,9 +997,25 @@ export default function Dashboard() {
             }}
           >
             {orderedTasks.map((t) => {
-              const isActive = selectedTaskId === t.id;
+              const isSelected = selectedTaskId === t.id;
               const isCompleted = completedTaskIds.includes(t.id);
               const rationale = layout?.rationale?.[`task:${t.id}`];
+              const isRecentlyMoved = recentlyMovedTaskIds.includes(t.id);
+
+              const isRecommendedTask =
+                condition === "adaptive" &&
+                layout?.ordered_task_ids &&
+                layout.ordered_task_ids.indexOf(t.id) !== -1 &&
+                layout.ordered_task_ids.indexOf(t.id) < 2;
+
+              const previousIndex = previousOrderedTaskIds.indexOf(t.id);
+              const currentIndex = layout?.ordered_task_ids?.indexOf(t.id);
+
+              const movedUp =
+                condition === "adaptive" &&
+                previousIndex !== -1 &&
+                currentIndex !== -1 &&
+                currentIndex < previousIndex;
 
               return (
                 <li
@@ -954,8 +1026,18 @@ export default function Dashboard() {
                     border: "1px solid #e6e6e6",
                     borderRadius: 10,
                     padding: 12,
-                    background: isActive ? "#f4f7ff" : "white",
-                    boxShadow: isActive ? "0 0 0 2px #9ab6ff inset" : "none",
+                    background: isRecentlyMoved
+                      ? "#eef5ff"
+                      : isActive
+                      ? "#f4f7ff"
+                      : "white",
+                    boxShadow: isRecentlyMoved
+                      ? "0 0 0 2px #7aa2ff inset, 0 0 16px rgba(122, 162, 255, 0.25)"
+                      : isActive
+                      ? "0 0 0 2px #9ab6ff inset"
+                      : "none",
+                    transition: "all 0.45s ease",
+                    transform: isRecentlyMoved ? "scale(1.01)" : "scale(1)",
                     display: "flex",
                     justifyContent: "space-between",
                     gap: 10,
@@ -963,9 +1045,27 @@ export default function Dashboard() {
                   }}
                 >
                   <div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
                     <div style={{ fontWeight: 600, color: "#111111" }}>
                       {t.title}
                     </div>
+
+                    {isRecommendedTask ? (
+                      <span
+                        style={{
+                          fontSize: 11,
+                          fontWeight: 700,
+                          padding: "3px 8px",
+                          borderRadius: 999,
+                          background: "#e8f1ff",
+                          color: "#184a9c",
+                          border: "1px solid #bfd5ff",
+                        }}
+                      >
+                        Empfohlen
+                      </span>
+                    ) : null}
+                  </div>
                     <div style={{ fontSize: 12, opacity: 0.75 }}>
                         {t.category}
                     </div>
@@ -983,6 +1083,21 @@ export default function Dashboard() {
                         }}
                       >
                         Abgeschlossen
+                      </div>
+                    ) : null}
+
+                    {movedUp ? (
+                      <div
+                        style={{
+                          fontSize: 12,
+                          marginTop: 6,
+                          color: "#184a9c",
+                          fontWeight: 600,
+                          opacity: isRecentlyMoved ? 1 : 0.85,
+                          transition: "opacity 0.45s ease",
+                        }}
+                      >
+                        {isRecentlyMoved ? "Neu priorisiert" : "Priorisiert"}
                       </div>
                     ) : null}
 
@@ -1071,7 +1186,25 @@ export default function Dashboard() {
                     }
                     title={condition === "adaptive" && rationale ? rationale : ""}
                     >
-                    <div style={{ color: "#111111" }}>{a.label}</div>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                      <div style={{ color: "#111111" }}>{a.label}</div>
+
+                      {condition === "adaptive" && isHighlighted ? (
+                        <span
+                          style={{
+                            fontSize: 11,
+                            fontWeight: 700,
+                            padding: "3px 8px",
+                            borderRadius: 999,
+                            background: "#e8f1ff",
+                            color: "#184a9c",
+                            border: "1px solid #bfd5ff",
+                          }}
+                        >
+                          Empfohlen
+                        </span>
+                      ) : null}
+                    </div>
 
                     {condition === "adaptive" && rationale ? (
                         <div
