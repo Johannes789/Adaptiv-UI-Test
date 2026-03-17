@@ -997,6 +997,7 @@ export default function Dashboard() {
             }}
           >
             {orderedTasks.map((t) => {
+              const isActive = selectedTaskId === t.id;
               const isSelected = selectedTaskId === t.id;
               const isCompleted = completedTaskIds.includes(t.id);
               const rationale = layout?.rationale?.[`task:${t.id}`];
