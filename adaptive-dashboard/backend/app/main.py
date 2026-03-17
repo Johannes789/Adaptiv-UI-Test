@@ -221,11 +221,11 @@ def export_summary_csv(user_id: Optional[str] = Query(default=None)):
             row["successful_test_tasks"],
             row["failed_test_tasks"],
             row["success_rate"],
-            row["refresh_count"],
-            row["switch_count"],
             row["session_count"],
             row["total_session_duration_ms"],
             row["avg_session_duration_ms"],
+            row["refresh_count"],
+            row["switch_count"],
         ])
 
     output.seek(0)
