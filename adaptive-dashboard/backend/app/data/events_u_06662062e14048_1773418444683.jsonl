@@ -1,0 +1,175 @@
+{"user_id":"u_06662062e14048_1773418444683","condition":"static","event_type":"switch_condition","target":"condition:static","ts":"2026-03-18T16:01:37.047000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"static","event_type":"switch_condition","target":"condition:static","ts":"2026-03-18T16:01:37.046000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"static","event_type":"switch_condition","target":"condition:static","ts":"2026-03-18T16:01:37.088000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:05:37.310000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_session_start","target":"session:adaptive","ts":"2026-03-18T16:05:37.320000Z","meta":{"session_condition":"adaptive"}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:05:37.324000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:05:37.327000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:1","ts":"2026-03-18T16:05:39.342000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"task_start","target":"task:1","ts":"2026-03-18T16:05:39.354000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:05:40.524000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:05:41.505000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:05:42.228000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:05:42.819000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:05:43.286000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:05:43.724000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:05:44.170000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:1","ts":"2026-03-18T16:05:45.754000Z","meta":{"dwell_ms":6412}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:2","ts":"2026-03-18T16:05:45.765000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"task_start","target":"task:2","ts":"2026-03-18T16:05:45.892000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:05:46.640000Z","meta":{"task_id":2}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:05:47.629000Z","meta":{"task_id":2}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:2","ts":"2026-03-18T16:05:48.297000Z","meta":{"dwell_ms":2532}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:1","ts":"2026-03-18T16:05:48.307000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:05:48.925000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:05:49.674000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:1","ts":"2026-03-18T16:05:50.421000Z","meta":{"dwell_ms":2114}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:05:50.431000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"task_start","target":"task:3","ts":"2026-03-18T16:05:50.512000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:05:51.115000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:05:52.001000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:05:52.519000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:05:53.151000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:05:53.796000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:05:54.346000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:05:55.264000Z","meta":{"dwell_ms":4833}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:1","ts":"2026-03-18T16:05:55.273000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_start","target":"test_task:1","ts":"2026-03-18T16:05:58.958000Z","meta":{"test_task_id":1,"instruction":"Finden Sie die Aufgabe mit der höchsten Priorität und öffnen Sie diese.","expected_action":"open","expected_task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:00.551000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:01.020000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:06:01.300000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:1","ts":"2026-03-18T16:06:01.860000Z","meta":{"dwell_ms":6587}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:01.870000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:02.428000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:06:02.766000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_complete","target":"test_task:1","ts":"2026-03-18T16:06:03.693000Z","meta":{"test_task_id":1,"duration_ms":4735,"selected_task_id":3,"last_action_key":"edit","last_action_task_id":3,"success":false,"success_reason":"Erwartete Aktion 'open' wurde nicht ausgeführt."}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:06:03.715000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:06.877000Z","meta":{"dwell_ms":5007}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:1","ts":"2026-03-18T16:06:06.888000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:1","ts":"2026-03-18T16:06:07.763000Z","meta":{"dwell_ms":875}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:07.797000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:08.435000Z","meta":{"dwell_ms":638}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:1","ts":"2026-03-18T16:06:08.447000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:1","ts":"2026-03-18T16:06:08.952000Z","meta":{"dwell_ms":505}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:08.962000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_start","target":"test_task:2","ts":"2026-03-18T16:06:37.591000Z","meta":{"test_task_id":2,"instruction":"Bearbeiten Sie eine Aufgabe Ihrer Wahl.","expected_action":"edit","expected_task_id":null}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:38.469000Z","meta":{"dwell_ms":29507}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:38.478000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:06:42.630000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:43.796000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:06:44.435000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:06:46.048000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:46.374000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:46.769000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:47.200000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:47.532000Z","meta":{"dwell_ms":9054}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:47.542000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:47.966000Z","meta":{"dwell_ms":424}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:47.977000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:48.159000Z","meta":{"dwell_ms":182}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:48.169000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:48.348000Z","meta":{"dwell_ms":179}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:48.364000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:48.731000Z","meta":{"dwell_ms":367}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:48.742000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:48.933000Z","meta":{"dwell_ms":191}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:48.943000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:49.086000Z","meta":{"dwell_ms":143}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:49.096000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_complete","target":"test_task:2","ts":"2026-03-18T16:06:50.197000Z","meta":{"test_task_id":2,"duration_ms":12606,"selected_task_id":3,"last_action_key":"open","last_action_task_id":3,"success":false,"success_reason":"Erwartete Aktion 'edit' wurde nicht ausgeführt."}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:06:50.217000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:06:53.864000Z","meta":{"dwell_ms":4768}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:06:53.876000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:57.757000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:58.203000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:58.525000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:58.822000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:06:59.040000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_start","target":"test_task:3","ts":"2026-03-18T16:07:00.488000Z","meta":{"test_task_id":3,"instruction":"Schließen Sie eine Aufgabe ab.","expected_action":"complete","expected_task_id":null}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:01.218000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:01.393000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:01.562000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:01.721000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:01.893000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:02.049000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:02.225000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:02.386000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:02.544000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:02.705000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:02.855000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:02.995000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_complete","target":"test_task:3","ts":"2026-03-18T16:07:03.511000Z","meta":{"test_task_id":3,"duration_ms":3023,"selected_task_id":3,"last_action_key":"open","last_action_task_id":3,"success":false,"success_reason":"Erwartete Aktion 'complete' wurde nicht ausgeführt."}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:07:03.542000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_start","target":"test_task:4","ts":"2026-03-18T16:07:10.897000Z","meta":{"test_task_id":4,"instruction":"Öffnen Sie die Detailansicht einer Aufgabe.","expected_action":"details","expected_task_id":null}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:11.800000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:11.940000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:07:12.598000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:07:12.753000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:07:12.880000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:07:13.009000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:07:13.133000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:13.498000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:13.636000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:13.772000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:07:13.887000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_complete","target":"test_task:4","ts":"2026-03-18T16:07:14.583000Z","meta":{"test_task_id":4,"duration_ms":3686,"selected_task_id":3,"last_action_key":"open","last_action_task_id":3,"success":false,"success_reason":"Erwartete Aktion 'details' wurde nicht ausgeführt."}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_session_end","target":"session:adaptive","ts":"2026-03-18T16:07:14.602000Z","meta":{"session_condition":"adaptive","duration_ms":97298,"completed_test_tasks":4}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:07:14.604000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:11:15.222000Z","meta":{"dwell_ms":261346}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:11:15.244000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_session_start","target":"session:adaptive","ts":"2026-03-18T16:11:18.703000Z","meta":{"session_condition":"adaptive"}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:11:18.705000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_start","target":"test_task:1","ts":"2026-03-18T16:11:20.456000Z","meta":{"test_task_id":1,"instruction":"Finden Sie die Aufgabe mit der höchsten Priorität und öffnen Sie diese.","expected_action":"open","expected_task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:11:21.819000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:11:22.827000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:11:23.431000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:11:24.599000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:11:25.147000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:11:25.651000Z","meta":{"dwell_ms":3832}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:1","ts":"2026-03-18T16:11:25.680000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:11:26.692000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:11:27.412000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:11:29.003000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:11:29.811000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:11:30.647000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:complete","ts":"2026-03-18T16:11:31.538000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"task_complete","target":"task:1","ts":"2026-03-18T16:11:31.567000Z","meta":{"task_id":1,"duration_ms":352213}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:1","ts":"2026-03-18T16:11:32.654000Z","meta":{"dwell_ms":6974}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:2","ts":"2026-03-18T16:11:32.670000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_complete","target":"test_task:1","ts":"2026-03-18T16:11:33.747000Z","meta":{"test_task_id":1,"duration_ms":13291,"selected_task_id":2,"last_action_key":"complete","last_action_task_id":1,"success":false,"success_reason":"Erwartete Aktion 'open' wurde nicht ausgeführt."}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:11:33.773000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_start","target":"test_task:2","ts":"2026-03-18T16:11:35.836000Z","meta":{"test_task_id":2,"instruction":"Bearbeiten Sie eine Aufgabe Ihrer Wahl.","expected_action":"edit","expected_task_id":null}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:11:40.475000Z","meta":{"task_id":2}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:11:42.252000Z","meta":{"task_id":2}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:details","ts":"2026-03-18T16:11:43.198000Z","meta":{"task_id":2}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:11:43.948000Z","meta":{"task_id":2}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_complete","target":"test_task:2","ts":"2026-03-18T16:11:45.233000Z","meta":{"test_task_id":2,"duration_ms":9397,"selected_task_id":2,"last_action_key":"edit","last_action_task_id":2,"success":true,"success_reason":"Erwartete Aktion erfolgreich ausgeführt."}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:11:45.258000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:2","ts":"2026-03-18T16:12:01.900000Z","meta":{"dwell_ms":29230}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:12:01.921000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:12:06.285000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:12:07.201000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:12:08.742000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:12:09.479000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:12:16.565000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:12:17.042000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:12:18.005000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:12:20.428000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:12:40.184000Z","meta":{"dwell_ms":38263}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:3","ts":"2026-03-18T16:12:40.200000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_start","target":"test_task:3","ts":"2026-03-18T16:12:42.253000Z","meta":{"test_task_id":3,"instruction":"Schließen Sie eine Aufgabe ab.","expected_action":"complete","expected_task_id":null}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:12:43.658000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:edit","ts":"2026-03-18T16:12:44.412000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:complete","ts":"2026-03-18T16:12:44.943000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"task_complete","target":"task:3","ts":"2026-03-18T16:12:44.972000Z","meta":{"task_id":3,"duration_ms":414460}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:complete","ts":"2026-03-18T16:12:46.145000Z","meta":{"task_id":3}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"dwell_task","target":"task:3","ts":"2026-03-18T16:12:47.361000Z","meta":{"dwell_ms":7161}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_task","target":"task:1","ts":"2026-03-18T16:12:47.376000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"task_start","target":"task:1","ts":"2026-03-18T16:12:47.449000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"click_action","target":"action:open","ts":"2026-03-18T16:12:47.980000Z","meta":{"task_id":1}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_complete","target":"test_task:3","ts":"2026-03-18T16:12:49.455000Z","meta":{"test_task_id":3,"duration_ms":7202,"selected_task_id":1,"last_action_key":"open","last_action_task_id":1,"success":false,"success_reason":"Erwartete Aktion 'complete' wurde nicht ausgeführt."}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:12:49.483000Z","meta":{}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_start","target":"test_task:4","ts":"2026-03-18T16:12:56.985000Z","meta":{"test_task_id":4,"instruction":"Öffnen Sie die Detailansicht einer Aufgabe.","expected_action":"details","expected_task_id":null}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_task_complete","target":"test_task:4","ts":"2026-03-18T16:12:58.435000Z","meta":{"test_task_id":4,"duration_ms":1450,"selected_task_id":1,"last_action_key":null,"last_action_task_id":null,"success":false,"success_reason":"Erwartete Aktion 'details' wurde nicht ausgeführt."}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"test_session_end","target":"session:adaptive","ts":"2026-03-18T16:12:58.472000Z","meta":{"session_condition":"adaptive","duration_ms":99782,"completed_test_tasks":4}}
+{"user_id":"u_06662062e14048_1773418444683","condition":"adaptive","event_type":"switch_condition","target":"condition:adaptive","ts":"2026-03-18T16:12:58.475000Z","meta":{}}
